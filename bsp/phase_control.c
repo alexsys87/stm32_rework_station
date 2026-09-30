@@ -161,7 +161,10 @@ void ZC_IRQHandler(void)
 
 void TIM3_IRQHandler(void)
 {
-    uint32_t pending = PHASE_TIM->SR & PHASE_TIM->DIER & CC_ALL_FLAGS;
+    uint32_t sr   = PHASE_TIM->SR;
+    uint32_t dier = PHASE_TIM->DIER;
+    uint32_t pending = (sr & dier) & CC_ALL_FLAGS;
+
     PHASE_TIM->SR = ~pending;       /* rc_w0: clears only the handled flags */
 
     for (uint32_t ch = 0; ch < PHASE_CH_COUNT; ch++) {
