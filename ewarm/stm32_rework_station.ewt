@@ -3424,21 +3424,51 @@
         </settings>
     </configuration>
     <group>
-        <name>startup</name>
+        <name>app</name>
         <file>
-            <name>$PROJ_DIR$\startup\startup_stm32f103xb.s</name>
+            <name>$PROJ_DIR$\..\app\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\pid.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\station.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\temperature.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\ui.c</name>
         </file>
     </group>
     <group>
-        <name>system</name>
+        <name>bsp</name>
         <file>
-            <name>$PROJ_DIR$\system\system_stm32f1xx.c</name>
+            <name>$PROJ_DIR$\..\bsp\adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\board.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\clock.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\fault_handlers.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\max7219.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\phase_control.c</name>
         </file>
     </group>
-    <file>
-        <name>$PROJ_DIR$\main.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\system\stm32f1xx_it.c</name>
-    </file>
+    <group>
+        <name>cmsis</name>
+        <file>
+            <name>$PROJ_DIR$\..\cmsis\device\startup_stm32f103xb.s</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cmsis\device\system_stm32f1xx.c</name>
+        </file>
+    </group>
 </project>

@@ -1,0 +1,15 @@
+# IAR EWARM build output and per-user settings
+ewarm/Debug/
+ewarm/Release/
+ewarm/settings/
+*.dep
+*.dni
+*.wsdt
+*.dbgdt
+*.bak
+
+# Other toolchains
+build/
+*.o
+*.elf
+*.map
