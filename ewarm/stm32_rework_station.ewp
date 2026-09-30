@@ -231,7 +231,6 @@
                 <debug>1</debug>
                 <option>
                     <name>CCDefines</name>
-                    <state>STM32F10X_MD</state>
                     <state>STM32F103xB</state>
                 </option>
                 <option>
@@ -353,8 +352,9 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$\system</state>
-                    <state>$PROJ_DIR$\core</state>
+                    <state>$PROJ_DIR$\..\app</state>
+                    <state>$PROJ_DIR$\..\bsp</state>
+                    <state>$PROJ_DIR$\..\cmsis\device</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -692,7 +692,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -1019,7 +1019,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>stm32_blink_import_lib.o</state>
+                    <state>stm32_rework_station_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -1153,11 +1153,11 @@
                 </option>
                 <option>
                     <name>Input description</name>
-                    <state></state>
+                    <state>Automatic choice of formatter, without multibyte support.</state>
                 </option>
                 <option>
                     <name>Output description</name>
-                    <state></state>
+                    <state>Automatic choice of formatter, without multibyte support.</state>
                 </option>
                 <option>
                     <name>GOutputBinary</name>
@@ -1165,7 +1165,7 @@
                 </option>
                 <option>
                     <name>OGCoreOrChip</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>GRuntimeLibSelect</name>
@@ -1179,7 +1179,7 @@
                 </option>
                 <option>
                     <name>RTDescription</name>
-                    <state></state>
+                    <state>A compact configuration of the C/C++14 runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
                 </option>
                 <option>
                     <name>OGProductVersion</name>
@@ -1187,19 +1187,19 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>9.60.3.7274</state>
+                    <state>9.70.1.13552</state>
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state></state>
+                    <state>STM32F103C8	ST STM32F103C8</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>GEndianModeBE</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGBufferedTerminalOutput</name>
@@ -1211,7 +1211,7 @@
                 </option>
                 <option>
                     <name>RTConfigPath2</name>
-                    <state></state>
+                    <state>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</state>
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
@@ -1220,7 +1220,7 @@
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGUseCmsisDspLib</name>
@@ -1237,7 +1237,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>-</state>
+                    <state>STM32F103C8	ST STM32F103C8</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -1348,6 +1348,7 @@
                 <debug>0</debug>
                 <option>
                     <name>CCDefines</name>
+                    <state>STM32F103xB</state>
                     <state>NDEBUG</state>
                 </option>
                 <option>
@@ -1429,7 +1430,7 @@
                 </option>
                 <option>
                     <name>IExtraOptions</name>
-                    <state></state>
+                    <state>-V</state>
                 </option>
                 <option>
                     <name>CCLangConformance</name>
@@ -1457,7 +1458,7 @@
                 </option>
                 <option>
                     <name>OutputFile</name>
-                    <state></state>
+                    <state>$FILE_BNAME$.o</state>
                 </option>
                 <option>
                     <name>CCLibConfigHeader</name>
@@ -1469,7 +1470,9 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state></state>
+                    <state>$PROJ_DIR$\..\app</state>
+                    <state>$PROJ_DIR$\..\bsp</state>
+                    <state>$PROJ_DIR$\..\cmsis\device</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1526,7 +1529,7 @@
                 </option>
                 <option>
                     <name>IccCppInlineSemantics</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IccCmsis</name>
@@ -1657,7 +1660,7 @@
                 </option>
                 <option>
                     <name>ADebug</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>AltRegisterNames</name>
@@ -1741,7 +1744,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state></state>
+                    <state>$FILE_BNAME$.o</state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -1799,7 +1802,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state></state>
+                    <state>stm32_rework_station.srec</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -1807,7 +1810,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -1837,7 +1840,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>###Unitialized###</state>
+                    <state>stm32_rework_station.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -1901,7 +1904,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>lnk0t.icf</state>
+                    <state>$TOOLKIT_DIR$/config/linker/ST/stm32f103x8.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1961,7 +1964,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -2052,11 +2055,11 @@
                 </option>
                 <option>
                     <name>IlinkOptInline</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkOptExceptionsAllow</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkOptExceptionsForce</name>
@@ -2072,7 +2075,7 @@
                 </option>
                 <option>
                     <name>IlinkOptUseVfe</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkOptForceVfe</name>
@@ -2134,7 +2137,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>stm32_rework_station_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2234,23 +2237,53 @@
         </settings>
     </configuration>
     <group>
-        <name>startup</name>
+        <name>app</name>
         <file>
-            <name>$PROJ_DIR$\startup\startup_stm32f103xb.s</name>
+            <name>$PROJ_DIR$\..\app\main.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\pid.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\station.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\temperature.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\ui.c</name>
         </file>
     </group>
     <group>
-        <name>system</name>
+        <name>bsp</name>
         <file>
-            <name>$PROJ_DIR$\system\system_stm32f1xx.c</name>
+            <name>$PROJ_DIR$\..\bsp\adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\board.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\clock.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\fault_handlers.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\max7219.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\bsp\phase_control.c</name>
         </file>
     </group>
-    <file>
-        <name>$PROJ_DIR$\main.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\system\stm32f1xx_it.c</name>
-    </file>
+    <group>
+        <name>cmsis</name>
+        <file>
+            <name>$PROJ_DIR$\..\cmsis\device\startup_stm32f103xb.s</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cmsis\device\system_stm32f1xx.c</name>
+        </file>
+    </group>
     <projectSettings>
         <general>
             <resolveSourceForBinaries>true</resolveSourceForBinaries>
